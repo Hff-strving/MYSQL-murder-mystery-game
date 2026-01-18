@@ -75,7 +75,7 @@ npm run dev
 
 执行 `database/demo/init_complete_system.sql` 后可使用：
 
-- 老板：`郝飞帆 / 123456`
+- 老板：`boss / 123456`
 - 员工：`staff_demo / 123456`
 - 玩家：建议从 `/register` 注册（或使用脚本内已导入的 `player_3001 / 123456` 等）
 
