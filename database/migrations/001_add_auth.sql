@@ -93,7 +93,7 @@ SELECT Role, COUNT(*) as Count FROM T_User GROUP BY Role;
 -- 验证演示账号：玩家/员工的默认密码均为 123456
 SELECT Username, Role, Ref_ID, Phone
 FROM T_User
-WHERE Username IN ('player_3001', 'player_3005', 'staff_demo', '郝飞帆')
+WHERE Username IN ('player_3001', 'player_3005', 'staff_demo', 'Boss')
    OR Username LIKE 'player\\_%'
    OR Username LIKE 'staff\\_%'
 ORDER BY Role, Username
