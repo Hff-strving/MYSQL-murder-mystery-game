@@ -16,7 +16,7 @@
 
 - 员工（默认绑定一个 DM）：`staff_demo / 123456`
 - 员工（与 DM 一一对应）：`staff_<DM_ID> / 123456`（例如 `staff_2001 / 123456`）
-- 老板（全局权限）：`郝飞帆 / 123456`
+- 老板（全局权限）：`Boss / 123456`
 
 说明：项目里既支持 `T_User(Role=staff, Password_Hash)` 的员工账号，也支持 `T_Staff_Account(Password)` 的员工账号（以后端 `AuthModel.login()` 为准）。
 
@@ -69,7 +69,7 @@ npm run dev
 
 1. 打开浏览器访问：`http://localhost:5173`
 2. 员工登录：`staff_demo / 123456` → 自动跳转 `/admin`
-3. 老板登录：`郝飞帆 / 123456` → `/admin`、`/admin/reports` 可按 DM 下拉筛选
+3. 老板登录：`Boss / 123456` → `/admin`、`/admin/reports` 可按 DM 下拉筛选
 4. 玩家：去 `/register` 注册 → 锁位 → 订单 → 支付（用于演示事务/触发器/锁位转化）
    - 用户名：`staff_demo`
    - 密码：`123456`
