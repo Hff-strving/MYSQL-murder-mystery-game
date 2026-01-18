@@ -19,7 +19,7 @@
 
 演示账号（执行 `database/demo/init_complete_system.sql` 后）：
 
-- 老板：`郝飞帆 / 123456`
+- 老板：`Boss / 123456`
 - 员工：`staff_demo / 123456`（默认绑定一个 DM）
 - 玩家：建议从 `/register` 注册；或使用已导入的 `player_3001 / 123456` 等
 
