@@ -73,7 +73,7 @@ Frontend: `http://127.0.0.1:5173` (proxy `/api -> 5000` is configured)
 
 After running `database/demo/init_complete_system.sql`:
 
-- Boss: `郝飞帆 / 123456`
+- Boss: `Boss / 123456`
 - Staff: `staff_demo / 123456`
 - Player: register via `/register` (or use preloaded `player_3001 / 123456`, etc.)
 
