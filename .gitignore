@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+api.log
+
+frontend-vue/node_modules/
+frontend-vue/dist/
+
+.env
+.env.*
+
