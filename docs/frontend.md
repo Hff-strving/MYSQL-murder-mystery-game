@@ -36,5 +36,5 @@ npm run dev
    - 先确认你登录的账号角色是 `staff` 或 `boss`（后端接口 `/api/admin/*` 会校验 token 里的 `role`）。
    - 如果你执行过 `database/demo/init_complete_system.sql`，可用演示员工账号：`staff_demo / 123456`。
    - 也可用 DM 对应员工账号：`staff_<DM_ID> / 123456`（例如 `staff_2001 / 123456`）。
-   - 老板账号（全局可见）：`郝飞帆 / 123456`。
+   - 老板账号（全局可见）：`Boss / 123456`。
    - 若修改了数据库角色或权限，请退出登录后重新登录（必要时清空浏览器 `localStorage`）。
