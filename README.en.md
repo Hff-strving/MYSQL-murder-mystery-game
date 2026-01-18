@@ -1,7 +1,7 @@
 # Murder Mystery Shop Management (Flask + MySQL + Vue3)
 
 <div align="right">
-  <a href="./README.zh.md"><img alt="中文" src="https://img.shields.io/badge/中文-点击查看-1677ff"></a>
+  <a href="./README.md"><img alt="中文" src="https://img.shields.io/badge/中文-查看-1677ff"></a>
 </div>
 
 This is my capstone/course project for **Database Design & Analysis**. The topic is a “Murder Mystery Shop Management System”: a runnable full-stack application that demonstrates database design, constraints, and server-side database capabilities through a complete business flow (**seat locking → ordering → payment → reporting**).
