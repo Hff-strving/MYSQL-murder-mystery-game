@@ -69,18 +69,18 @@ FROM T_DM;
 SELECT 'OK: staff_<DM_ID> accounts ensured (password=123456)' AS Status;
 
 /*==================== 1.1) 创建老板账号（全局可见） ====================*/
-/* 账号：郝飞帆 / 123456（或手机号 18800000001 / 123456） */
+/* 账号：Boss / 123456（或手机号 18800000001 / 123456） */
 SET @salt := LOWER(REPLACE(UUID(), '-', ''));
 SET @pwd := '123456';
 SET @hash := LOWER(SHA2(CONCAT(@pwd, @salt), 256));
 
 INSERT INTO T_User (Username, Phone, Password_Hash, Role, Ref_ID, Create_Time)
-VALUES ('郝飞帆', '18800000001', CONCAT(@salt, '$', @hash), 'boss', NULL, NOW())
+VALUES ('Boss', '18800000001', CONCAT(@salt, '$', @hash), 'boss', NULL, NOW())
 ON DUPLICATE KEY UPDATE
   Password_Hash = VALUES(Password_Hash),
   Role = 'boss';
 
-SELECT 'OK: boss user 郝飞帆 created/updated (password=123456)' AS Status;
+SELECT 'OK: boss user Boss created/updated (password=123456)' AS Status;
 
 /*==================== 2) 锁位超时自动过期（可选） ====================*/
 /* 注意：
@@ -252,5 +252,5 @@ SELECT 'OK: views/procs/functions created (v_order_detail, v_lock_detail, sp_dm_
 /*==================== 4) 结束校验 ====================*/
 SELECT Username, Phone, Role, Ref_ID
 FROM T_User
-WHERE Username IN ('staff_demo', '郝飞帆')
+WHERE Username IN ('staff_demo', 'Boss')
    OR Phone IN ('18800000000', '18800000001');
