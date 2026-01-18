@@ -93,6 +93,6 @@
 ## 6. 验收测试建议（最短路径）
 
 1) 执行初始化脚本：`source database/demo/init_complete_system.sql`
-2) 登录 boss：`郝飞帆 / 123456` → `/admin`、`/admin/reports`（全局+筛选）
+2) 登录 boss：`Boss / 123456` → `/admin`、`/admin/reports`（全局+筛选）
 3) 登录 staff：`staff_2001 / 123456` → `/admin` 只见本人 DM 数据
 4) 玩家：注册 → 锁位 → 在“我的锁位”点“去预约/支付” → 支付 → 订单可见
